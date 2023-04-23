@@ -1,0 +1,58 @@
+鲸藏，总有办法
+唯一艺术，10个藏品
+小龙meta,三个盲盒6月11开启
+光子星球，注册空投6月7号开启转增未开发
+超元空间，超元熊
+healer,两个徽章6月三号进入app查看
+麒麟数藏两个蛋正在发放
+ibea空投一份
+时光输藏  元宇宙钥匙
+燃文6月3号晚上十一点注册活动结束
+友盾数藏正维护
+虚无数藏
+数慢社一个藏品
+元始部落，三个藏品
+艺链2个沙僧
+中网数藏，好几个空投，6月1前统一发放注册拉新空投
+开源数藏，几个徽章
+元宙，乐山居士
+幻雾 2个勋章
+元气盒子2个空投
+寻迹，李白图
+顶艺，意大利女郎
+顺源一个纪念勋章
+元本，小方块
+知音数藏 爱心宝藏6月22开始转
+熊猫艺术一个徽章
+五一数藏一个盲盒
+樊核 天女
+超维空间
+umx
+启元
+元交所
+igo
+飞扬
+东方易犬
+甘道数藏
+                  $pageNum=1;
+                  $pageSize=5;
+                  $pageNum=empty($_GET['pageNum'])?1:$_GET["pageNum"];
+                  $endPage=ceil($allNum/$pageSize);
+                  $array=news($pageNum,$pageSize,$sql);
+                  foreach($array as $key=>$row{}
+                   // $user=$_POST["user"];
+                   // $pass=$_POST["password"];
+                 $sql2="select * from text3";
+                 $result=mysql_query($sql,$conn);
+                 while($row=mysql_fetch_object($result)){
+                   	echo"<tr>
+                   		<td><img src='".$row->image."'width=45 /></td>";
+                   	echo"<td>".$row->id."</td>";
+                   	echo"<td>".$row->name."</td>";
+                   	echo"<td>".$row->phone."</td>";
+                    echo"<td>".$row->major."</td>";
+                   	echo"<td>".$row->class."</td>";
+                   	echo"<td>".$row->room."</td>";
+                   	echo"<td width=80><a href='javascript:del({$row->id})'>删除</a> <a href='edit.php?id={$row->id}'>修改</a></td></tr>";
+                       }       ?>      
+                 <tr><td colspan='8' align='center'><a href="add.p
